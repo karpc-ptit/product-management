@@ -1,2 +1,17 @@
-doctype html
-header Day la header
+//-Tạo một thẻ header với class là header
+header.header 
+    .container 
+        //-Tạo một thẻ div với 2 class là row và align-items-center
+        .row.align-items-center 
+            .col-3 
+                .inner-logo
+                    //-Click vào sẽ link sang trang chủ
+                    a(href="/") 
+                        img(src="/images/logo.svg", alt="logo")
+            .col-9 
+                .inner-menue 
+                    ul
+                        li
+                            a(href="/") Trang chủ
+                        li 
+                            a(href="/products") Sản phẩm
